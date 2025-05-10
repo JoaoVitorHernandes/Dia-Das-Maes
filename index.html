@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dia Das Mães</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1 class="titulo">Feliz Dia Das Mães!</h1>
+        <div class="heart" id="heart"></div>
+
+        <div class="container" id="cardContainer">
+            <img src="WhatsApp Image 2025-05-09 at 11.00.34.jpeg" alt="Foto central" class="photo">
+            <div class="card card1">Te amo Mãe &#128151</div>
+            <div class="card card2">Obrigado por tudo &#128151</div>
+            <div class="card card3">Seu sorriso ilumina tudo &#128151</div>
+            <div class="card card4">Te admiro muito &#128151</div>
+            <div class="card card6">Você é luz &#128151</div>
+            <div class="card card7">Você ilumina meu dia &#128151</div>
+            <div class="card card8">Você é especial para mim &#128151</div>
+        </div>
+    </div>
+
+    <script>
+        const heart = document.getElementById('heart');
+        const cardContainer = document.getElementById('cardContainer');
+
+        heart.addEventListener('click', () => {
+            heart.classList.add('fade-out');
+            setTimeout(() => {
+                cardContainer.style.display = 'block';
+            }, 1000);
+        });
+    </script>
+
+</body>
+
+</html>
